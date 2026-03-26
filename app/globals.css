@@ -705,6 +705,7 @@ section {
   .mobileNav { display: flex; }
   .mobile-avatar { display: block; }
   #home h1 { font-size: 3.5rem; }
+  #home { padding-top: 8rem; }
   .hide-mobile { display: none; }
   
   .about-content { grid-template-columns: 1fr; text-align: center; }
