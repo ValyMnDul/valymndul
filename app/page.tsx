@@ -402,16 +402,18 @@ export default function Home() {
           <div className="section-container">
             <h2 className="section-title">Team</h2>
             <div className="team-panel" onClick={() => window.open("https://ping.suceavahacks.org/", "_blank")}>
-              <div className="team-overlay">
+              <div className="team-cover">
                 <Image src="/SuceavaHacksIco.png" alt="SuceavaHacks" width={120} height={120} className="team-logo" />
+              </div>
+              <div className="team-body">
                 <div className="team-info">
                   <p>
                     A student-led tech community based in Suceava, <span className="highlight-ro">Ro</span><span className="highlight-ma">man</span><span className="highlight-ia">ia</span>. We create spaces for high schoolers to learn, build, and connect through technology.
                   </p>
-                  <div className="team-actions">
-                    <button className="btn-github" onClick={(e) => { e.stopPropagation(); window.open("https://github.com/suceavahacks", "_blank"); }}>GitHub</button>
-                    <button className="btn-linkedin" onClick={(e) => { e.stopPropagation(); window.open("https://www.linkedin.com/company/suceavahacks", "_blank"); }}>LinkedIn</button>
-                  </div>
+                </div>
+                <div className="team-actions">
+                  <button className="btn-github" onClick={(e) => { e.stopPropagation(); window.open("https://github.com/suceavahacks", "_blank"); }}>GitHub</button>
+                  <button className="btn-linkedin" onClick={(e) => { e.stopPropagation(); window.open("https://www.linkedin.com/company/suceavahacks", "_blank"); }}>LinkedIn</button>
                 </div>
               </div>
             </div>
