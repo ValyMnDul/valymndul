@@ -74,6 +74,15 @@ const certificates: Certificate[] = [
 
 const projects: Project[] = [
   {
+    title: "RiseBit",
+    description: "RiseBit is a modern social media platform that transforms how people share, interact, and build communities online.",
+    image: "/Projects/RiseBit.gif",
+    imageAlt: "MNDList",
+    accentColor: "#AD0097",
+    repo: "https://github.com/ValyMnDul/risebit",
+    explore: "https://risebit.valymnd.me",
+  },
+  {
     title: "Deskify",
     description: "Deskify is a web app that simulates a simple desktop OS with apps like Notes, Calculator, Settings, and Clock.",
     image: "/Projects/Deskify.gif",
@@ -99,15 +108,6 @@ const projects: Project[] = [
     accentColor: "#2070a9",
     repo: "https://github.com/ValyMnDul/MNDCode",
     explore: "https://mndcode.valymnd.hackclub.app/",
-  },
-  {
-    title: "MNDList",
-    description: "MNDList is a ToDo app that stores notes in browser cookies, with add and delete options. No database.",
-    image: "/Projects/mndlist.gif",
-    imageAlt: "MNDList",
-    accentColor: "gray",
-    repo: "https://github.com/ValyMnDul/MNDList",
-    explore: "https://mndlist.valymnd.hackclub.app/",
   },
 ];
 
