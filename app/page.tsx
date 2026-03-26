@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useCallback, useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 type Certificate = {
@@ -124,6 +125,7 @@ const skills: Skill[] = [
 ];
 
 export default function Home() {
+  const router = useRouter();
   const certificateDivRef = useRef<HTMLDivElement>(null);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const [scrollValue, setScrollValue] = useState(true);
@@ -453,8 +455,8 @@ export default function Home() {
               <div className="footer-divider"></div>
               <div className="footer-contact">
                 <i onClick={() => { window.location.href = "mailto:mindrilavasilevalentin@gmail.com"; }} className="fa-solid fa-envelope" title="Email"></i>
-                <i onClick={() => window.open("/phone", "_blank")} className="fa-solid fa-phone" title="Phone"></i>
-                <i onClick={() => window.open("/location", "_blank")} className="fa-solid fa-location-dot" title="Location"></i>
+                <i onClick={() => router.push("/phone")} className="fa-solid fa-phone" title="Phone"></i>
+                <i onClick={() => router.push("/location")} className="fa-solid fa-location-dot" title="Location"></i>
               </div>
             </footer>
           </div>
