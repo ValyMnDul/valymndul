@@ -1,4 +1,3 @@
-
 <h2 align="center">Hi! My name is Vasile Mîndrilă and I'm a student, from Romania 🇷🇴</h2>
 
 
